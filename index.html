@@ -52,17 +52,17 @@
 				if (s) {
 					s--;
 				} else {
-					s = 59;
 					if (m) {
 						m--;
 					} else {
-						m = 59;
 						if (h) {
 							h--;
 						} else {
 							clearInterval(intervalId);
 						}
+						m = 59;
 					}
+					s = 59;
 				}
 			}
 
